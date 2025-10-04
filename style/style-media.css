@@ -1,0 +1,134 @@
+/*CSS para los elemenots con menos de 1600px*/
+@media (max-width: 1600px) {
+  body {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+    
+  header {
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header h2 {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: row-reverse;
+    gap: 5px;
+  }
+
+  #container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px; 
+  }
+
+  #titulo-overlay {
+    position: static;
+    transform: none;
+    max-width: 90%;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  #marco {
+    width: 90vw;
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  #cuadro {
+    width: 80vw;
+    height: 200px;
+  }
+
+  #contendorHobies {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .hobby {
+    width: 90%;
+    height: auto;
+  }
+
+  .fotoHobby {
+    width: 90%;
+    height: 300px;
+  }
+
+  .parrafoHobby {
+    width: 90%;
+  }
+
+
+
+  #botonEx {
+    width: 90%;
+    height: 200px;
+  }
+
+  .skills-grid {
+    fl
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  #cursosBoton{
+    display: block;
+  }
+
+  #iframe {
+    display:none;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    align-items: center;
+    text-align: center;
+  }
+
+  #titulo-overlay {
+    font-size: 1.2rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .skill-card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+  }
+}

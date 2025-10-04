@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4b4b4b;
+  color: aliceblue;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.botones {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botones:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/*Efecto al presionar botones*/
+.botones:active {
+  transform: scale(0.95);
+}
+
+#cursosBoton {
+  display: none;
+}
+
+.icono {
+  height: 30px;
+  z-index: 2;
+}
+
+#tema-container {
+  display: flex;
+  gap: 30px;
+  padding: 5px;
+  background-color: #6a6d6d;
+  border-radius: 20px;
+  align-items: center;
+  border: 0;
+  cursor: grab;
+}
+/*HEADER*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #393a3a;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 10rem;
+  z-index: 1;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+#bola {
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  margin-left: -4px;
+}
+
+.on {
+  transform: translateX(58px);
+}
+
+#menu-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+#menu {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+header h2 {
+  margin-top: 1rem;
+  margin-left: 40px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin-right: 40px;
+}
+
+li a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.2s ease;
+}
+
+li a:hover {
+  color: aqua;
+}
+
+#container {
+  background: url("img/foto.jpg") center/cover no-repeat;
+  width: 100%;
+  aspect-ratio: 4/2;
+  position: relative;
+}
+
+#titulo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*WEBKIT*/
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #464545;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #91c6ca;
+  border-radius: 6px;
+  border: 3px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #b2c4c5;
+}
+/*SOBRE MI*/
+/*Foto personal*/
+#foto {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+}
+
+#sobreMi {
+  background-color: #4b4b4b;
+  justify-items: center;
+  color: black;
+}
+
+#marco {
+  display: flex;
+  flex-direction: column;
+  background-color: #4b4b4b;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  width: 50vw;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+#cuadro {
+  width: 40vw;
+  height: 280px;
+  background: url("foto.jpg") center/cover no-repeat #e0e0e0ab;
+  margin-bottom: 50px;
+}
+
+/*HOBBIES*/
+#hobbies {
+  margin: 60px 0 50px;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+#contendorHobies {
+  display: flex;
+  gap: 150px;
+}
+
+.titulo {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.3rem;
+  color: white;
+  text-decoration-line: none;
+  width: 1.2 rem;
+  font-weight: 2 rem;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+
+  height: 500px;
+  width: 400px;
+  background-color: #c9c0c0;
+  border-radius: 3px;
+  border: 3px solid black;
+}
+
+.fotoHobby {
+  border: 3px solid black;
+  margin: 25px;
+  height: 330px;
+  width: 350px;
+  cursor: pointer;
+}
+
+#gaming {
+  background: url("img/luna.png") center/cover no-repeat #a0a0a0;
+}
+
+#naturaleza {
+  background: url("img/Camino.jpg") center/cover no-repeat;
+}
+
+#deporte {
+  background: url("img/deporte.jpg") center/cover no-repeat;
+}
+
+.parrafoHobby {
+  margin-left: 25px;
+  height: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #4b4b4b;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.parrafoHobby p {
+  margin-top: 10px;
+}
+
+/*CURSOS*/
+iframe {
+  height: 25vw;
+  width: 80vw;
+}
+
+#cursos {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+#tituloCursos {
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+#tituloCursos:hover {
+  color: aqua;
+}
+
+/*BORDES EFECTO*/
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.blink-border {
+  border-bottom: 3px solid #fff;
+  padding: 20px;
+  animation: blink 3s infinite;
+}
+
+/*HABILIDADES*/
+
+#habilidades {
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-card p {
+  color: black;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*FOOTER*/
+footer {
+  min-height: 100px;
+  padding: 10px 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.menuFooter li a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.2s ease;
+}
+
+.menuFooter li a:hover {
+  color: aqua;
+}
+
+#copyright {
+  font-size: 1rem;
+  color: #606162;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*PROYECTOS*/
+#proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  color: white;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card-proyecto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-proyecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  background-color: #f1f1f1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.overlay h5 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.overlay a {
+  background: #6da048;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.overlay a:hover {
+  background: #557d38;
+}
+
+.card-proyecto:hover img {
+  transform: scale(1.1);
+}
+
+.card-proyecto:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#iconoGitHub {
+  background: url("https://icongr.am/devicon/github-original.svg?size=60&color=000000")
+    center/contain no-repeat;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  filter: invert(1) brightness(2);
+  transition: transform 0.6s ease;
+}
+
+#iconoGitHub:hover {
+  transform: rotate(360deg);
+}

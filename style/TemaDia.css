@@ -1,0 +1,100 @@
+/*ESTILOS PARA EL MODO DIA*/
+
+body.claro {
+  background-color: #f4f4f4;
+  color: #1e1e1e;
+}
+
+body.claro header {
+  background-color: #c0dfdc;
+  border-bottom: 4px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.claro #tema-container {
+  background-color: #6d6d6d;
+}
+
+body.claro #bola {
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+body.claro #menu li a {
+  color: #1e1e1e;
+}
+
+body.claro .nav-link::after {
+  background: #000;
+}
+body.claro::-webkit-scrollbar-track {
+  background: #e7e7e7;
+}
+body.claro::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+body.claro li a:hover {
+  color: #0077cc;
+}
+
+body.claro #sobreMi {
+  background-color: #f4f4f4;
+}
+body.claro #marco {
+  background-color: #f4f4f4;
+  color: #1e1e1e;
+}
+
+body.claro #cuadro {
+  background-color: #cccccc;
+}
+
+body.claro .blink-border {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+body.claro .hobby {
+  background-color: #cccccc;
+}
+
+body.claro .parrafoHobby {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+body.claro .skill-card {
+  border: 2px solid black;
+}
+
+body.claro footer {
+  background-color: #3a3939;
+}
+
+body.claro #copyright {
+  color: #000000;
+}
+
+@keyframes blink-negro {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+body.claro .blink-border {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  animation: blink-negro 3s infinite;
+}
+
+body.claro .menuFooter li a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.2s ease;
+}
+
+body.claro .titulo {
+  color: rgb(0, 0, 0);
+}

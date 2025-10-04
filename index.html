@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alejandro Valdelvira</title>
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/TemaDia.css" />
+    <link rel="stylesheet" href="style/style-media.css" />
+    <link rel="stylesheet" href="style/styleHobby.css" />
+
+    <!--FUENTES-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="style/img/favicon.ico" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+
+    <header id="head">
+      <div id="menu-wrapper">
+        <ul id="menu">
+          <li><a href="#container" class="nav-link active">Inicio</a></li>
+          <li><a href="#sobreMi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li><a href="#cursos" class="nav-link">Formación</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        </ul>
+        <span id="nav-underline"></span>
+      </div>
+      <button id="tema-container">
+        <img src="style/img/luna.png" class="icono" />
+        <div id="bola"></div>
+        <img src="style/img/sol.png" class="icono" />
+      </button>
+    </header>
+
+    <!--FOTO Y TITULO-->
+
+    <div id="container">
+      <!--Contiene la foto-->
+      <div id="titulo-overlay">Alejandro Valdelvira</div>
+    </div>
+
+    <!--PRESENTACION-->
+
+    <section id="sobreMi" class="blink-border">
+      <div id="marco">
+        <h2 class="titulo" id="tituloSobreMi">Sobre mí</h2>
+        <div id="foto"></div>
+        <p>
+          ¡Hola! Me llamo Alejandro Valdelvira y soy estudiante de desarrollo
+          web con mucho entusiasmo por la informática y la programación.
+          Actualmente estoy cursando un grado superior en desarrollo de
+          aplicaciones web, donde disfruto cada día intentado aprender cosas
+          nuevas .
+
+          <br />
+          <br />
+
+          Además de programar, me encanta hacer deporte y pasar tiempo en la
+          naturaleza. Desde muy pequeño he sentido una gran fascinación por la
+          tecnología y los ordenadores, algo que me sigue motivando a seguir
+          explorando y aprendiendo en este campo.
+        </p>
+        <div id="cuadro"></div>
+      </div>
+    </section>
+
+    <!--POPUP HOBBIES-->
+
+    <div id="popup" class="popup">
+      <div class="popup-content"></div>
+    </div>
+
+    <!--HOBBIES-->
+
+    <section id="hobbies" class="blink-border">
+      <div id="tituloHobbies">
+        <h4 class="titulo">Hobbies</h4>
+      </div>
+
+      <div id="contendorHobies">
+        <div class="hobby fade">
+          <div class="fotoHobby" id="deporte"></div>
+          <div class="parrafoHobby">
+            <p>-Torneo de baloncesto con mis compañeros de informatica-</p>
+          </div>
+        </div>
+
+        <div class="hobby fade">
+          <div class="fotoHobby" id="gaming"></div>
+          <div class="parrafoHobby">
+            <p>texto de prueba</p>
+          </div>
+        </div>
+
+        <div class="hobby fade">
+          <div class="fotoHobby" id="naturaleza"></div>
+          <div class="parrafoHobby">
+            <p>-Camino de santigo 2023-</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CURSOS-->
+
+    <section id="cursos" class="blink-border">
+      <a
+        target="_blank"
+        href="https://openwebinars.net/@alejandroValdelvira/"
+        class="titulo"
+        id="tituloCursos"
+      >
+        Cursos realizados
+      </a>
+
+      <div id="iframe">
+        <iframe src="https://openwebinars.net/@alejandroValdelvira/"></iframe>
+      </div>
+      <button
+        class="botones"
+        id="cursosBoton"
+        onclick="window.open('https://openwebinars.net/@alejandroValdelvira/', '_blank')"
+      >
+        Ver Cursos
+      </button>
+    </section>
+
+    <!--TECNOLOGIAS-->
+
+    <section id="habilidades" class="blink-border">
+      <h4 class="titulo">Habilidades Técnicas</h4>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"
+          />
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"
+          />
+          <p>CSS3</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+          />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://icongr.am/devicon/nodejs-original.svg?size=128&color=currentColor"
+            alt="Nodejs"
+          />
+          <p>Nodejs</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt="Git"
+          />
+          <p>Git</p>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            alt="Java"
+          />
+          <p>Java</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            alt="php"
+          />
+          <p>PHP</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+            alt="Spring"
+          />
+          <p>Spring</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+            alt="docker"
+          />
+          <p>Docker</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+            alt="linux"
+          />
+          <p>Linux</p>
+        </div>
+      </div>
+      <div class="skills-grid" style="margin-bottom: 20px">
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="MySql"
+          />
+          <p>MySql</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+            alt="Oracle"
+          />
+          <p>Oracle</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://icongr.am/devicon/mongodb-original.svg?size=128&color=currentColor"
+            alt="Mongo"
+          />
+          <p>Mongo</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg"
+            alt="Electron"
+          />
+          <p>Electron</p>
+        </div>
+      </div>
+    </section>
+
+    <!--PROYECTOS-->
+
+    <section id="proyectos">
+      <h2 class="titulo">Proyectos</h2>
+      <div class="grid-proyectos">
+        <div class="card-proyecto">
+          <img src="style/img/fotoWeb.JPG" alt="Proyecto 1" />
+          <div class="overlay">
+            <h5>Página web</h5>
+            <a href="https://github.com/usuario/proyecto1" target="_blank"
+              >Ver código</a
+            >
+          </div>
+        </div>
+        <div class="card-proyecto">
+          <img src="style/img/Pokemon.jpg" alt="Proyecto 2" />
+          <div class="overlay">
+            <h5>Juego pokemon</h5>
+            <a href="https://github.com/usuario/proyecto2" target="_blank"
+              >Ver código</a
+            >
+            <a
+              href="https://alejandrodev.online/pruebasPokemon/"
+              target="_blank"
+              style="margin-top: 5px"
+              >Ir a la página</a
+            >
+          </div>
+        </div>
+        <div class="card-proyecto">
+          <img src="style/img/sol.png" alt="Proyecto 3" />
+          <div class="overlay">
+            <h5>Proyecto 3</h5>
+            <a href="https://github.com/usuario/proyecto3" target="_blank"
+              >Ver código</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer>
+      <div>
+        <p id="copyright" style="color: white">@Alejandro Valdelvira</p>
+      </div>
+      <div>
+        <ul id="menuFooter">
+          <li>
+            <a href="https://github.com/AlejandroValdelvira" target="_blank">
+              <div id="iconoGitHub"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--SCRIPTS-->
+
+    <script src="script/cambioTema.js"></script>
+    <script src="script/efectoAparicion.js"></script>
+    <script src="script/headerEfect.js"></script>
+    <script src="script/hobbyZoom.js"></script>
+  </body>
+</html>
